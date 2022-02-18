@@ -1,0 +1,146 @@
+body {
+  color: #f9f7fe;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.weather-app {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 80px;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
+  background: #fff;
+}
+
+h1 {
+  max-width: 50px;
+  margin-left: 30px;
+  font-weight: 120px;
+  font-size: 30px;
+  line-height: 48px;
+  color: #272142;
+}
+
+li {
+  font-weight: 500;
+  margin-bottom: 5 px;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  line-height: 20px;
+  list-style: none;
+}
+li strong {
+  color: #f65282;
+  font-weight: 400;
+}
+
+.temperature-container {
+  position: relative;
+  margin-top: -50px;
+  margin-right: -50px;
+  box-sizing: border-box;
+  color: rgb(135, 135, 135);
+  display: flex;
+}
+li:first-letter {
+  text-transform: capitalize;
+}
+
+img {
+  margin-top: -60px;
+  margin-left: -40px;
+  margin-right: 12px;
+  width: 39%;
+  height: 52%;
+}
+.temperature {
+  color: #212121;
+  font-weight: 400;
+  margin-top: -45px;
+  margin-left: 10 px;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 1;
+}
+.unit {
+  top: -35px;
+  left: 2px;
+  color: #212121;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 400;
+  position: relative;
+  line-height: 1;
+}
+form .search-input {
+  background: #f9f7fe;
+  border: none;
+  padding: 30 px 70 px;
+  display: inline-block;
+  border-radius: 6 px;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  height: 100 px;
+  line-height: 25px;
+}
+.btn-primary {
+  background: #885df1;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 15 px 0;
+  border: none;
+  height: 50 px;
+}
+
+small {
+  max-width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+small a {
+  color: #f65282 !important;
+}
+
+a:link {
+  text-decoration: none;
+  color: rgba(1, 0, 7, 0.4);
+}
+
+a.active {
+  color: #f65282;
+  cursor: default;
+}
+a.active:hover {
+  text-decoration: none;
+  color: rgba(39, 33, 66, 0.4);
+}
+
+.weather-forecast {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.img-style {
+  margin-top: 1px;
+  aspect-ratio: auto 38/38;
+}
+
+.forecast-day {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: rgba(39, 33, 66, 0.4);
+}
+
+.forecast-temperature {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #f65282;
+  font-weight: 700;
+}
+.forecast-temperature-min {
+  margin-left: 10 px;
+  opacity: 0.6;
+}
