@@ -67,6 +67,13 @@ export default function App() {
           </div>
         </div>
       </div>
+      <small>
+        <a href="https://github.com/FranSanc/weather-react">
+          {" "}
+          Open source code{" "}
+        </a>
+        by Francesca Sancarlo
+      </small>
     </div>
   );
 }
