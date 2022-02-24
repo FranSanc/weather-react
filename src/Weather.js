@@ -3,10 +3,10 @@ import "./Weather.css";
 import axios from "axios";
 
 export default function Weather(props) {
-  const [ready, setReady] = useState(false);
-  const [weatherData, setWeatherData] = useState({});
+  const [weatherData, setWeatherData] = useState({ ready: false });
   function handleResponse(response) {
     setWeatherData({
+      ready: true,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
@@ -15,10 +15,9 @@ export default function Weather(props) {
       description: response.data.weather[0].description,
       date: "Wednesday 09:09",
     });
-    setReady(true);
   }
 
-  if (ready) {
+  if (weatherData.ready) {
     return (
       <div className="container">
         <div className="weather-app">
