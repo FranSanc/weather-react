@@ -14,12 +14,13 @@ body {
 }
 
 h1 {
-  max-width: 50px;
+  max-width: 100px;
   margin-left: 30px;
   font-weight: 120px;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 48px;
   color: #272142;
+  white-space: nowrap;
 }
 
 li {
@@ -58,9 +59,9 @@ img {
   color: #212121;
   font-weight: 400;
   margin-top: -45px;
-  margin-left: 15px;
+  margin-left: 25px;
   font-weight: 700;
-  font-size: 70px;
+  font-size: 60px;
   line-height: 1;
 }
 .unit {
@@ -84,7 +85,7 @@ form .search-input {
   height: 100 px;
   line-height: 25px;
 }
-.btn-primary {
+form .btn-primary {
   background: #885df1;
   font-weight: 700;
   font-size: 16px;
