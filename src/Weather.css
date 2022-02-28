@@ -73,6 +73,12 @@ img {
   position: relative;
   line-height: 1;
 }
+
+ a .unit {
+  text-decoration: none;
+  color: #f65282;
+}
+
 form .search-input {
   background: #f9f7fe;
   border: none;

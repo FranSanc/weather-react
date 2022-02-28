@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Weather.css";
 import axios from "axios";
 import FormattedDate from "./formattedDate";
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
@@ -98,11 +99,7 @@ export default function Weather(props) {
                   />
                 </div>
                 <div className="temperature">
-                  {" "}
-                  {Math.round(weatherData.temperature)}
-                  <span className="unit" id="celsius-link">
-                    °C|°F
-                  </span>
+                  <WeatherTemperature celsius={weatherData.temperature} />{" "}
                 </div>
                 <div className="weather-forecast" id="forecast"></div>
               </div>
