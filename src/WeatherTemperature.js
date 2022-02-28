@@ -21,7 +21,7 @@ return (props.celsius * 9)/5 +32;
       <div className="WeatherTemperature">
         {Math.round(props.celsius)}
         <span className="unit">
-          °C|
+          °C |{" "}
           <a href="/" onClick={convertToFahrenheit} className="unitLink">
             °F
           </a>
@@ -35,7 +35,7 @@ return (props.celsius * 9)/5 +32;
         <span className="unit">
           <a href="/" onClick={convertToCelsius} className="unitLink">
             {" "}
-            °C
+            °C{" "}
           </a>
           |°F
         </span>
