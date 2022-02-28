@@ -74,7 +74,12 @@ img {
   line-height: 1;
 }
 
- a .unit {
+.unitLink {
+  text-decoration: none;
+  color: #f65282  !important;
+ 
+}
+.unitLink:hover {
   text-decoration: none;
   color: #f65282;
 }
