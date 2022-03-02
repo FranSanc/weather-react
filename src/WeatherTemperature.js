@@ -3,18 +3,18 @@ import "./Weather.css";
 
 export default function WeatherTemperature(props) {
   const [unit, setUnit] = useState("celsius");
-  function convertToFahrenheit(event){
+  function convertToFahrenheit(event) {
     event.preventDefault();
-    setUnit("fahrenheit"); 
+    setUnit("fahrenheit");
   }
-function convertToCelsius(event) {
-  event.preventDefault();
-  setUnit("celsius");
-}
+  function convertToCelsius(event) {
+    event.preventDefault();
+    setUnit("celsius");
+  }
 
-function fahrenheit(){
-return (props.celsius * 9)/5 +32;   
-}
+  function fahrenheit() {
+    return (props.celsius * 9) / 5 + 32;
+  }
 
   if (unit === "celsius") {
     return (

@@ -3,6 +3,7 @@ import "./Weather.css";
 import axios from "axios";
 import FormattedDate from "./formattedDate";
 import WeatherTemperature from "./WeatherTemperature";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
@@ -101,10 +102,10 @@ export default function Weather(props) {
                 <div className="temperature">
                   <WeatherTemperature celsius={weatherData.temperature} />{" "}
                 </div>
-                <div className="weather-forecast" id="forecast"></div>
               </div>
             </div>
           </div>
+          <WeatherForecast />
         </div>
         <small>
           <a href="https://github.com/FranSanc/weather-react">

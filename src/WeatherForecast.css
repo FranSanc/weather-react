@@ -1,0 +1,14 @@
+.WeatherForecast {
+  text-align: center;
+}
+
+.WeatherForecast-icon {
+  max-height: 100%;
+  margin: auto;
+  margin-left: 68px;
+  margin-top: 40px;
+  width: 90%;
+  height: auto;
+  margin-bottom: -25px;
+  
+}
