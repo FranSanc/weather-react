@@ -139,12 +139,7 @@ a.active:hover {
   aspect-ratio: auto 38/38;
 }
 
-.forecast-day {
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: rgba(39, 33, 66, 0.4);
-}
+
 
 .forecast-temperature {
   font-size: 13px;
@@ -156,3 +151,4 @@ a.active:hover {
   margin-left: 10 px;
   opacity: 0.6;
 }
+
