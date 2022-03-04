@@ -11,9 +11,9 @@ export default function WeatherForecastDay(props) {
     let temperature = Math.round(props.data.temp.min);
     return `${temperature}°`;
   }
+ 
   function forecastIcon() {
-    let icon =
-      `http://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`();
+    let icon = `http://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`;
     return `${icon}`;
   }
 
@@ -28,7 +28,7 @@ export default function WeatherForecastDay(props) {
     <div>
       <div className="WeatherForecast-day">{day()}</div>{" "}
       <div className="WeatherForecast-icon">
-        <img src={forecastIcon.icon} alt="" width="55" height="60"></img>
+        <img src={forecastIcon()} alt="" width="50" height="60"></img>
       </div>
       <div className="WeatherForecast-temp">
         <span className="Forecast-max"> {maxTemperature()}</span>
