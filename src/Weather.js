@@ -9,7 +9,6 @@ export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
   const [weatherData, setWeatherData] = useState({ ready: false });
   function handleResponse(response) {
-    
     setWeatherData({
       ready: true,
       coordinates: response.data.coord,
@@ -114,7 +113,8 @@ export default function Weather(props) {
             {" "}
             Open source code{" "}
           </a>
-          by Francesca Sancarlo
+          by Francesca Sancarlo and hosted on
+          <a href="https://eager-minsky-250a22.netlify.app/"> Netlify </a>
         </small>
       </div>
     );
